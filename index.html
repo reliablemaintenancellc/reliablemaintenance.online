@@ -3,104 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Castle HD — Official Developer Site</title>
+    <title>Castle HD — Developer Website</title>
 
     <meta
       name="description"
-      content="Castle HD — official developer website for RELIABLE MAINTENANCE SERVICES LLC. Contact details, privacy policy, and terms of service."
+      content="Castle HD — official developer site for RELIABLE MAINTENANCE SERVICES LLC. Support contact, policies, and upcoming releases."
     />
-    <meta name="theme-color" content="#071a3a" />
+    <meta name="theme-color" content="#06142f" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Icon (must exist at assets/icon.png) -->
     <link rel="icon" type="image/png" href="assets/icon.png" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Background glow (visual only) -->
+    <div class="bg-glow" aria-hidden="true"></div>
+
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="top">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Castle HD home">
-          <img src="assets/icon.png" class="brand-icon" alt="Castle HD icon" />
-          <div class="brand-stack">
+          <img class="brand-icon" src="assets/icon.png" alt="Castle HD logo" />
+          <div class="brand-text">
             <span class="brand-name">Castle HD</span>
-            <span class="brand-sub">Official Developer & Support</span>
+            <span class="brand-sub">RELIABLE MAINTENANCE SERVICES LLC</span>
           </div>
         </a>
 
         <nav class="nav" aria-label="Primary navigation">
           <a href="#apps">Apps</a>
+          <a href="#company">Company</a>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
           <a href="#terms">Terms</a>
         </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-primary" href="#contact">Support</a>
+        </div>
       </div>
     </header>
 
-    <main id="top">
+    <main>
       <!-- HERO -->
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-left">
-            <span class="tag">RELIABLE MAINTENANCE SERVICES LLC</span>
-            <h1>Castle HD</h1>
+            <div class="kicker">
+              <span class="chip chip-live">Official Developer Website</span>
+              <span class="chip chip-soft">Blue Secure • Verified Company</span>
+            </div>
+
+            <h1>
+              Castle HD
+              <span class="h1-sub">Support, compliance, and policy hub.</span>
+            </h1>
+
             <p class="lead">
-              This is the official developer website for Castle HD. Here you can find support contact details,
-              website privacy policy, and terms of service.
+              This website provides official developer identification, contact information, and website-level policies
+              for apps published under the <strong>Castle HD</strong> developer name.
             </p>
 
             <div class="hero-actions">
-              <a class="btn primary" href="#contact">Contact Support</a>
-              <a class="btn ghost" href="#apps">Apps</a>
+              <a class="btn btn-primary" href="#apps">See upcoming apps</a>
+              <a class="btn btn-ghost" href="#privacy">Privacy Policy</a>
             </div>
 
-            <div class="quick">
-              <a class="quick-item" href="mailto:dev@reliablemaintenance.online">
-                <span class="quick-label">Email</span>
-                <span class="quick-value">dev@reliablemaintenance.online</span>
-              </a>
-
-              <a class="quick-item" href="tel:+15712369264">
-                <span class="quick-label">Phone</span>
-                <span class="quick-value">571 236-9264</span>
-              </a>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-k">Company</span>
+                <span class="stat-v">RELIABLE MAINTENANCE SERVICES LLC</span>
+              </div>
+              <div class="stat">
+                <span class="stat-k">D-U-N-S</span>
+                <span class="stat-v">883534922</span>
+              </div>
+              <div class="stat">
+                <span class="stat-k">Address</span>
+                <span class="stat-v">Woodbridge, VA (US)</span>
+              </div>
             </div>
           </div>
 
-          <!-- RIGHT: Coming Soon Widget -->
+          <!-- COMING SOON WIDGET -->
           <aside class="hero-right">
-            <div class="widget">
-              <div class="widget-top">
-                <span class="dot"></span>
-                <span class="widget-title">Our apps are coming soon</span>
-                <span class="pill">Status: Preparing launch</span>
+            <div class="card card-hero">
+              <div class="card-hero-top">
+                <div class="pulse" aria-hidden="true"></div>
+                <div>
+                  <div class="card-title">Apps Coming Soon</div>
+                  <div class="card-sub">Launching on Google Play</div>
+                </div>
+                <div class="badge">Preparing</div>
               </div>
 
-              <h2 class="widget-headline">Launching on Google Play</h2>
-              <p class="widget-text">
-                We’re currently preparing and publishing our first applications. This page will be updated with
-                direct links once releases are live.
+              <p class="card-text">
+                We’re currently preparing and publishing our first applications.
+                Once releases are live, official store links will appear here.
               </p>
 
-              <div class="widget-actions">
-                <a class="btn primary" href="#contact">Get updates</a>
-                <a class="btn ghost" href="#privacy">Website privacy</a>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="#contact">Get updates</a>
+                <a class="btn btn-ghost" href="#company">Company info</a>
               </div>
 
-              <div class="widget-note">
-                <div class="note-row">
-                  <span class="note-k">Company</span>
-                  <span class="note-v">RELIABLE MAINTENANCE SERVICES LLC</span>
+              <div class="divider"></div>
+
+              <div class="mini-grid">
+                <div class="mini">
+                  <span>Email</span>
+                  <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a>
                 </div>
-                <div class="note-row">
-                  <span class="note-k">D-U-N-S</span>
-                  <span class="note-v">883534922</span>
+                <div class="mini">
+                  <span>Phone</span>
+                  <a href="tel:+15712369264">571 236-9264</a>
                 </div>
               </div>
             </div>
@@ -109,106 +134,99 @@
       </section>
 
       <!-- APPS -->
-      <section id="apps" class="section">
+      <section class="section" id="apps">
         <div class="container">
           <div class="section-head">
             <h2>Apps</h2>
             <p class="muted">
-              Releases are being prepared. Once published, apps will be listed here with official store links.
+              Our apps are in final preparation. When published, we will add the official Google Play links here.
             </p>
           </div>
 
-          <div class="apps-grid">
-            <div class="app-card">
-              <div class="app-card-top">
-                <div class="app-badge">Coming Soon</div>
-                <div class="app-name">Castle HD Apps</div>
+          <div class="grid-2">
+            <div class="card card-app">
+              <div class="card-app-top">
+                <div>
+                  <div class="app-name">Castle HD Apps</div>
+                  <div class="app-sub">Release status: Coming soon</div>
+                </div>
+                <div class="badge badge-soft">Coming soon</div>
               </div>
-              <p class="muted">
-                We’re working on our first releases. For support, partnerships, or early access, contact us.
-              </p>
 
-              <!-- Optional placeholder button (add store link later) -->
-              <div class="card-actions">
-                <a class="btn primary" href="#contact">Contact us</a>
-                <a class="btn ghost" href="#terms">Terms</a>
+              <ul class="bullet">
+                <li>Professional user experience</li>
+                <li>Clear privacy & terms pages</li>
+                <li>Support available by email and phone</li>
+              </ul>
+
+              <div class="card-actions" style="margin-top: 14px;">
+                <a class="btn btn-primary" href="#contact">Contact support</a>
+                <a class="btn btn-ghost" href="#terms">Read terms</a>
               </div>
+
+              <p class="hint">Tip: Once your Play Store link exists, add it here for fast verification.</p>
             </div>
 
-            <div class="app-card app-card-alt">
-              <div class="app-card-top">
-                <div class="app-badge blue">Developer Info</div>
-                <div class="app-name">Verified Company</div>
+            <!-- COMPANY -->
+            <div class="card card-info" id="company">
+              <div class="card-app-top">
+                <div>
+                  <div class="app-name">Company & Verification</div>
+                  <div class="app-sub">Official details</div>
+                </div>
+                <div class="badge">Verified</div>
               </div>
 
-              <div class="info-list">
-                <div class="info-row">
-                  <span class="info-k">Company</span>
-                  <span class="info-v">RELIABLE MAINTENANCE SERVICES LLC</span>
-                </div>
-                <div class="info-row">
-                  <span class="info-k">Address</span>
-                  <span class="info-v">4012 Cairo Pl, Woodbridge, VA 22192-7616</span>
-                </div>
-                <div class="info-row">
-                  <span class="info-k">Phone</span>
-                  <span class="info-v"><a href="tel:+15712369264">571 236-9264</a></span>
-                </div>
-                <div class="info-row">
-                  <span class="info-k">Email</span>
-                  <span class="info-v"><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></span>
-                </div>
-                <div class="info-row">
-                  <span class="info-k">D-U-N-S</span>
-                  <span class="info-v">883534922</span>
-                </div>
+              <div class="rows">
+                <div class="row"><span>Developer name</span><strong>Castle HD</strong></div>
+                <div class="row"><span>Company</span><strong>RELIABLE MAINTENANCE SERVICES LLC</strong></div>
+                <div class="row"><span>Address</span><strong>4012 Cairo Pl, Woodbridge, VA 22192-7616</strong></div>
+                <div class="row"><span>Phone</span><strong><a href="tel:+15712369264">571 236-9264</a></strong></div>
+                <div class="row"><span>Email</span><strong><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></strong></div>
+                <div class="row"><span>D-U-N-S</span><strong>883534922</strong></div>
               </div>
             </div>
-          </div>
-
-          <div class="callout">
-            <div class="callout-left">
-              <h3>Want a store link here?</h3>
-              <p class="muted">As soon as your app is live, paste the Google Play URL and we’ll add it instantly.</p>
-            </div>
-            <a class="btn ghost" href="#contact">Send the link</a>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section section-alt">
+      <section class="section section-alt" id="contact">
         <div class="container">
           <div class="section-head">
             <h2>Contact Us</h2>
             <p class="muted">Support and business inquiries.</p>
           </div>
 
-          <div class="contact-grid">
-            <div class="tile">
-              <h3>Email</h3>
-              <p><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></p>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Support Email</h3>
+              <p class="big-link">
+                <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a>
+              </p>
               <p class="muted">We typically respond within 1–2 business days.</p>
             </div>
 
-            <div class="tile">
+            <div class="card">
               <h3>Phone</h3>
-              <p><a href="tel:+15712369264">571 236-9264</a></p>
+              <p class="big-link">
+                <a href="tel:+15712369264">571 236-9264</a>
+              </p>
               <p class="muted">Standard business hours.</p>
             </div>
 
-            <div class="tile">
+            <div class="card">
               <h3>Address</h3>
-              <p>
+              <p class="muted">
                 4012 Cairo Pl<br />
                 Woodbridge, VA 22192-7616<br />
                 United States
               </p>
             </div>
 
-            <div class="tile">
+            <div class="card">
               <h3>D-U-N-S</h3>
-              <p><strong>883534922</strong></p>
+              <p class="big-link"><strong>883534922</strong></p>
               <p class="muted">RELIABLE MAINTENANCE SERVICES LLC</p>
             </div>
           </div>
@@ -216,7 +234,7 @@
       </section>
 
       <!-- PRIVACY -->
-      <section id="privacy" class="section">
+      <section class="section" id="privacy">
         <div class="container">
           <div class="section-head">
             <h2>Privacy Policy</h2>
@@ -229,14 +247,14 @@
             <h3>1. Scope</h3>
             <p>
               This Privacy Policy applies to this website and communications with us (such as support emails).
-              Individual apps may include additional app-specific privacy disclosures when they are released.
+              Individual apps may provide additional app-specific privacy disclosures when they are released.
             </p>
 
             <h3>2. Information we collect</h3>
             <ul>
-              <li><strong>Contact info</strong> (e.g., your email) when you contact us</li>
+              <li><strong>Contact information</strong> (e.g., email address) when you contact us</li>
               <li><strong>Message content</strong> you send for support or business inquiries</li>
-              <li><strong>Basic technical data</strong> from standard server logs (e.g., IP address, user agent)</li>
+              <li><strong>Basic technical data</strong> in standard server logs (e.g., IP address, browser type)</li>
             </ul>
 
             <h3>3. How we use information</h3>
@@ -248,7 +266,7 @@
 
             <h3>4. Sharing</h3>
             <p>
-              We do not sell your personal information. We may share information only as needed to operate the website,
+              We do not sell personal information. We may share information only as needed to operate the website,
               respond to requests, comply with law, or protect our systems and users.
             </p>
 
@@ -272,7 +290,7 @@
       </section>
 
       <!-- TERMS -->
-      <section id="terms" class="section section-alt">
+      <section class="section section-alt" id="terms">
         <div class="container">
           <div class="section-head">
             <h2>Terms of Service</h2>
@@ -281,9 +299,7 @@
 
           <article class="paper">
             <h3>1. Acceptance</h3>
-            <p>
-              By using this website, you agree to these Terms. If you do not agree, do not use this website.
-            </p>
+            <p>By using this website, you agree to these Terms. If you do not agree, do not use this website.</p>
 
             <h3>2. Use of the website</h3>
             <ul>
@@ -298,14 +314,10 @@
             </p>
 
             <h3>4. Third-party links</h3>
-            <p>
-              This website may link to third-party services. We are not responsible for their content or policies.
-            </p>
+            <p>This website may link to third-party services. We are not responsible for their content or policies.</p>
 
             <h3>5. Disclaimer</h3>
-            <p>
-              This website is provided “as is” without warranties. We do not guarantee uninterrupted access.
-            </p>
+            <p>This website is provided “as is” without warranties. We do not guarantee uninterrupted access.</p>
 
             <h3>6. Limitation of liability</h3>
             <p>
@@ -336,33 +348,26 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-inner">
-        <div class="footer-left">
-          <div class="footer-brand">
-            <img src="assets/icon.png" class="brand-icon" alt="Castle HD icon" />
-            <div class="brand-stack">
-              <span class="brand-name">Castle HD</span>
-              <span class="brand-sub">RELIABLE MAINTENANCE SERVICES LLC</span>
-            </div>
+        <div class="footer-brand">
+          <img class="brand-icon" src="assets/icon.png" alt="Castle HD logo" />
+          <div class="brand-text">
+            <span class="brand-name">Castle HD</span>
+            <span class="brand-sub">RELIABLE MAINTENANCE SERVICES LLC</span>
           </div>
-          <p class="muted">
-            Official developer website. For inquiries: <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a>
-          </p>
         </div>
 
         <div class="footer-links">
           <a href="#apps">Apps</a>
+          <a href="#company">Company</a>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
           <a href="#terms">Terms</a>
         </div>
 
-        <div class="footer-right">
-          <p class="muted small">
-            © <span id="year"></span> RELIABLE MAINTENANCE SERVICES LLC<br />
-            4012 Cairo Pl, Woodbridge, VA 22192-7616<br />
-            Phone: <a href="tel:+15712369264">571 236-9264</a><br />
-            D-U-N-S: 883534922
-          </p>
+        <div class="footer-meta">
+          <div>© <span id="year"></span> RELIABLE MAINTENANCE SERVICES LLC</div>
+          <div>4012 Cairo Pl, Woodbridge, VA 22192-7616</div>
+          <div>Phone: <a href="tel:+15712369264">571 236-9264</a> • D-U-N-S: 883534922</div>
         </div>
       </div>
     </footer>
