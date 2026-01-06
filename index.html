@@ -9,12 +9,12 @@
       name="description"
       content="Castle HD — official developer website for RELIABLE MAINTENANCE SERVICES LLC. Contact details, privacy policy, and terms of service."
     />
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="theme-color" content="#071a3a" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -25,14 +25,17 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container nav">
+      <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Castle HD home">
-          <img class="logo-img" src="assets/icon.png" alt="Castle HD logo" />
-          <span class="brand-text">Castle HD</span>
+          <img src="assets/icon.png" class="brand-icon" alt="Castle HD icon" />
+          <div class="brand-stack">
+            <span class="brand-name">Castle HD</span>
+            <span class="brand-sub">Official Developer & Support</span>
+          </div>
         </a>
 
-        <nav class="menu" aria-label="Primary">
-          <a href="#about">About</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#apps">Apps</a>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
           <a href="#terms">Terms</a>
@@ -44,127 +47,157 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container hero-grid">
-          <div>
-            <p class="badge">Official Developer Website</p>
+          <div class="hero-left">
+            <span class="tag">RELIABLE MAINTENANCE SERVICES LLC</span>
             <h1>Castle HD</h1>
             <p class="lead">
-              This is the official developer website for <strong>Castle HD</strong>, operated by
-              <strong>RELIABLE MAINTENANCE SERVICES LLC</strong>. Here you can find support contact details and our policies.
+              This is the official developer website for Castle HD. Here you can find support contact details,
+              website privacy policy, and terms of service.
             </p>
 
-            <div class="cta">
-              <a class="btn" href="#contact">Contact Support</a>
-              <a class="btn ghost" href="#privacy">Privacy Policy</a>
+            <div class="hero-actions">
+              <a class="btn primary" href="#contact">Contact Support</a>
+              <a class="btn ghost" href="#apps">Apps</a>
             </div>
 
-            <div class="mini">
-              <div class="mini-card">
-                <div class="mini-title">Support Email</div>
-                <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a>
-              </div>
-              <div class="mini-card">
-                <div class="mini-title">Phone</div>
-                <a href="tel:+15712369264">571 236-9264</a>
-              </div>
+            <div class="quick">
+              <a class="quick-item" href="mailto:dev@reliablemaintenance.online">
+                <span class="quick-label">Email</span>
+                <span class="quick-value">dev@reliablemaintenance.online</span>
+              </a>
+
+              <a class="quick-item" href="tel:+15712369264">
+                <span class="quick-label">Phone</span>
+                <span class="quick-value">571 236-9264</span>
+              </a>
             </div>
           </div>
 
-          <!-- INFO CARD -->
-          <div class="hero-card">
-            <div class="panel">
-              <div class="panel-top">
-                <span class="pill">Castle HD</span>
-                <span class="pill ghost">Developer & Support</span>
+          <!-- RIGHT: Coming Soon Widget -->
+          <aside class="hero-right">
+            <div class="widget">
+              <div class="widget-top">
+                <span class="dot"></span>
+                <span class="widget-title">Our apps are coming soon</span>
+                <span class="pill">Status: Preparing launch</span>
               </div>
 
-              <h2>Fast support. Clear policies.</h2>
-              <p class="muted" style="margin-top: 0;">
-                If you need help with our apps or have a business inquiry, reach us by email or phone.
-                Our privacy policy and terms are listed on this page.
+              <h2 class="widget-headline">Launching on Google Play</h2>
+              <p class="widget-text">
+                We’re currently preparing and publishing our first applications. This page will be updated with
+                direct links once releases are live.
               </p>
 
-              <div class="panel-actions">
-                <a class="btn" href="#contact">Contact</a>
-                <a class="btn ghost" href="#terms">Terms</a>
+              <div class="widget-actions">
+                <a class="btn primary" href="#contact">Get updates</a>
+                <a class="btn ghost" href="#privacy">Website privacy</a>
               </div>
 
-              <div class="divider"></div>
-
-              <div class="kv">
-                <div><span>Company</span><strong>RELIABLE MAINTENANCE SERVICES LLC</strong></div>
-                <div><span>Developer Name</span><strong>Castle HD</strong></div>
-                <div><span>Address</span><strong>4012 Cairo Pl, Woodbridge, VA 22192-7616</strong></div>
-                <div><span>Email</span><strong><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></strong></div>
-                <div><span>Phone</span><strong><a href="tel:+15712369264">571 236-9264</a></strong></div>
-                <div><span>D-U-N-S</span><strong>883534922</strong></div>
+              <div class="widget-note">
+                <div class="note-row">
+                  <span class="note-k">Company</span>
+                  <span class="note-v">RELIABLE MAINTENANCE SERVICES LLC</span>
+                </div>
+                <div class="note-row">
+                  <span class="note-k">D-U-N-S</span>
+                  <span class="note-v">883534922</span>
+                </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section id="about" class="section alt">
+      <!-- APPS -->
+      <section id="apps" class="section">
         <div class="container">
           <div class="section-head">
-            <h2>About</h2>
+            <h2>Apps</h2>
             <p class="muted">
-              Castle HD is a developer brand operated by <strong>RELIABLE MAINTENANCE SERVICES LLC</strong>.
-              This page is provided for identification, support, and policy information.
+              Releases are being prepared. Once published, apps will be listed here with official store links.
             </p>
           </div>
 
-          <div class="two-col">
-            <div class="info">
-              <h3>Company details</h3>
-              <ul class="list">
-                <li><span>Developer name</span><strong>Castle HD</strong></li>
-                <li><span>Company name</span><strong>RELIABLE MAINTENANCE SERVICES LLC</strong></li>
-                <li><span>Address</span><strong>4012 Cairo Pl, Woodbridge, VA 22192-7616</strong></li>
-                <li><span>Phone</span><strong><a href="tel:+15712369264">571 236-9264</a></strong></li>
-                <li><span>Email</span><strong><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></strong></li>
-                <li><span>D-U-N-S number</span><strong>883534922</strong></li>
-              </ul>
-            </div>
+          <div class="apps-grid">
+            <div class="app-card">
+              <div class="app-card-top">
+                <div class="app-badge">Coming Soon</div>
+                <div class="app-name">Castle HD Apps</div>
+              </div>
+              <p class="muted">
+                We’re working on our first releases. For support, partnerships, or early access, contact us.
+              </p>
 
-            <div class="info">
-              <h3>What you can expect</h3>
-              <ul class="bullets">
-                <li>Clear support contact</li>
-                <li>Transparent policies</li>
-                <li>Ongoing updates and improvements</li>
-              </ul>
-
-              <div class="note">
-                <strong>Note:</strong> If an app has its own privacy policy, we will link it from this website.
+              <!-- Optional placeholder button (add store link later) -->
+              <div class="card-actions">
+                <a class="btn primary" href="#contact">Contact us</a>
+                <a class="btn ghost" href="#terms">Terms</a>
               </div>
             </div>
+
+            <div class="app-card app-card-alt">
+              <div class="app-card-top">
+                <div class="app-badge blue">Developer Info</div>
+                <div class="app-name">Verified Company</div>
+              </div>
+
+              <div class="info-list">
+                <div class="info-row">
+                  <span class="info-k">Company</span>
+                  <span class="info-v">RELIABLE MAINTENANCE SERVICES LLC</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-k">Address</span>
+                  <span class="info-v">4012 Cairo Pl, Woodbridge, VA 22192-7616</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-k">Phone</span>
+                  <span class="info-v"><a href="tel:+15712369264">571 236-9264</a></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-k">Email</span>
+                  <span class="info-v"><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-k">D-U-N-S</span>
+                  <span class="info-v">883534922</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <div class="callout-left">
+              <h3>Want a store link here?</h3>
+              <p class="muted">As soon as your app is live, paste the Google Play URL and we’ll add it instantly.</p>
+            </div>
+            <a class="btn ghost" href="#contact">Send the link</a>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section">
+      <section id="contact" class="section section-alt">
         <div class="container">
           <div class="section-head">
-            <h2>Contact</h2>
+            <h2>Contact Us</h2>
             <p class="muted">Support and business inquiries.</p>
           </div>
 
           <div class="contact-grid">
-            <div class="card">
+            <div class="tile">
               <h3>Email</h3>
               <p><a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></p>
               <p class="muted">We typically respond within 1–2 business days.</p>
             </div>
 
-            <div class="card">
+            <div class="tile">
               <h3>Phone</h3>
               <p><a href="tel:+15712369264">571 236-9264</a></p>
-              <p class="muted">Available during standard business hours.</p>
+              <p class="muted">Standard business hours.</p>
             </div>
 
-            <div class="card">
+            <div class="tile">
               <h3>Address</h3>
               <p>
                 4012 Cairo Pl<br />
@@ -173,7 +206,7 @@
               </p>
             </div>
 
-            <div class="card">
+            <div class="tile">
               <h3>D-U-N-S</h3>
               <p><strong>883534922</strong></p>
               <p class="muted">RELIABLE MAINTENANCE SERVICES LLC</p>
@@ -183,56 +216,49 @@
       </section>
 
       <!-- PRIVACY -->
-      <section id="privacy" class="section alt">
+      <section id="privacy" class="section">
         <div class="container">
           <div class="section-head">
             <h2>Privacy Policy</h2>
             <p class="muted">
-              This Privacy Policy describes how Castle HD (RELIABLE MAINTENANCE SERVICES LLC) handles information on this website
-              and in connection with support communications.
+              This policy covers this website and communications with Castle HD (RELIABLE MAINTENANCE SERVICES LLC).
             </p>
           </div>
 
-          <div class="policy">
+          <article class="paper">
             <h3>1. Scope</h3>
             <p>
-              This Privacy Policy applies to this website and communications with us (for example, when you email support).
-              Individual apps may have additional app-specific privacy policies.
+              This Privacy Policy applies to this website and communications with us (such as support emails).
+              Individual apps may include additional app-specific privacy disclosures when they are released.
             </p>
 
             <h3>2. Information we collect</h3>
-            <ul class="bullets">
-              <li><strong>Contact information</strong> (e.g., your email address) if you contact us</li>
+            <ul>
+              <li><strong>Contact info</strong> (e.g., your email) when you contact us</li>
               <li><strong>Message content</strong> you send for support or business inquiries</li>
-              <li><strong>Basic technical data</strong> commonly included in server logs (e.g., IP address, browser type)</li>
+              <li><strong>Basic technical data</strong> from standard server logs (e.g., IP address, user agent)</li>
             </ul>
 
             <h3>3. How we use information</h3>
-            <ul class="bullets">
-              <li>To respond to support requests and inquiries</li>
-              <li>To operate and secure this website</li>
+            <ul>
+              <li>To respond to inquiries and provide support</li>
+              <li>To operate, maintain, and secure this website</li>
               <li>To comply with legal obligations</li>
             </ul>
 
             <h3>4. Sharing</h3>
             <p>
               We do not sell your personal information. We may share information only as needed to operate the website,
-              respond to support requests, comply with law, or protect our systems.
+              respond to requests, comply with law, or protect our systems and users.
             </p>
 
             <h3>5. Retention</h3>
             <p>
-              We retain support communications for as long as necessary to respond and for operational/legal recordkeeping.
+              We keep communications only as long as necessary for support and operational/legal recordkeeping.
             </p>
 
-            <h3>6. Your choices</h3>
-            <p>
-              You can request access, correction, or deletion of your personal information by contacting us at
-              <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a>.
-            </p>
-
-            <h3>7. Contact</h3>
-            <p>
+            <h3>6. Contact</h3>
+            <p class="contact-block">
               <strong>RELIABLE MAINTENANCE SERVICES LLC</strong> (Castle HD)<br />
               4012 Cairo Pl, Woodbridge, VA 22192-7616<br />
               Email: <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a><br />
@@ -240,30 +266,30 @@
               D-U-N-S: 883534922
             </p>
 
-            <p class="muted small">Last updated: <span id="privacyUpdated"></span></p>
-          </div>
+            <p class="stamp">Last updated: <span id="privacyUpdated"></span></p>
+          </article>
         </div>
       </section>
 
       <!-- TERMS -->
-      <section id="terms" class="section">
+      <section id="terms" class="section section-alt">
         <div class="container">
           <div class="section-head">
             <h2>Terms of Service</h2>
-            <p class="muted">
-              These Terms govern your use of this website and your interactions with Castle HD (RELIABLE MAINTENANCE SERVICES LLC).
-            </p>
+            <p class="muted">These Terms govern your use of this website.</p>
           </div>
 
-          <div class="policy">
+          <article class="paper">
             <h3>1. Acceptance</h3>
-            <p>By using this website, you agree to these Terms. If you do not agree, do not use this website.</p>
+            <p>
+              By using this website, you agree to these Terms. If you do not agree, do not use this website.
+            </p>
 
             <h3>2. Use of the website</h3>
-            <ul class="bullets">
+            <ul>
               <li>You will use the website only for lawful purposes.</li>
-              <li>You will not attempt to disrupt, hack, or abuse the website.</li>
-              <li>You will not access non-public areas of our systems.</li>
+              <li>You will not attempt to disrupt, hack, scrape, or abuse the website.</li>
+              <li>You will not access non-public systems or interfere with website functionality.</li>
             </ul>
 
             <h3>3. Intellectual property</h3>
@@ -293,7 +319,7 @@
             </p>
 
             <h3>8. Contact</h3>
-            <p>
+            <p class="contact-block">
               <strong>RELIABLE MAINTENANCE SERVICES LLC</strong> (Castle HD)<br />
               4012 Cairo Pl, Woodbridge, VA 22192-7616<br />
               Email: <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a><br />
@@ -301,38 +327,42 @@
               D-U-N-S: 883534922
             </p>
 
-            <p class="muted small">Last updated: <span id="termsUpdated"></span></p>
-          </div>
+            <p class="stamp">Last updated: <span id="termsUpdated"></span></p>
+          </article>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <div class="brand footer-brand">
-            <img class="logo-img" src="assets/icon.png" alt="Castle HD logo" />
-            <span class="brand-text">Castle HD</span>
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <img src="assets/icon.png" class="brand-icon" alt="Castle HD icon" />
+            <div class="brand-stack">
+              <span class="brand-name">Castle HD</span>
+              <span class="brand-sub">RELIABLE MAINTENANCE SERVICES LLC</span>
+            </div>
           </div>
           <p class="muted">
-            Official developer website for Castle HD (RELIABLE MAINTENANCE SERVICES LLC).
+            Official developer website. For inquiries: <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a>
           </p>
         </div>
 
         <div class="footer-links">
-          <a href="#about">About</a>
+          <a href="#apps">Apps</a>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
           <a href="#terms">Terms</a>
         </div>
 
-        <div class="muted small right">
-          © <span id="year"></span> RELIABLE MAINTENANCE SERVICES LLC<br />
-          4012 Cairo Pl, Woodbridge, VA 22192-7616<br />
-          Phone: <a href="tel:+15712369264">571 236-9264</a><br />
-          Email: <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a><br />
-          D-U-N-S: 883534922
+        <div class="footer-right">
+          <p class="muted small">
+            © <span id="year"></span> RELIABLE MAINTENANCE SERVICES LLC<br />
+            4012 Cairo Pl, Woodbridge, VA 22192-7616<br />
+            Phone: <a href="tel:+15712369264">571 236-9264</a><br />
+            D-U-N-S: 883534922
+          </p>
         </div>
       </div>
     </footer>
