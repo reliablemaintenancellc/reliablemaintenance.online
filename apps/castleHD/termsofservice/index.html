@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Castle HD App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-950: #020617;
+            --navy-900: #0a1628;
+            --navy-800: #0f172a;
+            --cyan-400: #22d3ee;
+            --cyan-500: #06b6d4;
+            --white: #ffffff;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --glass-border: rgba(148, 163, 184, 0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, var(--navy-950), var(--navy-900));
+            color: var(--gray-300);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--cyan-400);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-400);
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .terms-content {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--gray-200);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--gray-400);
+        }
+
+        ul, ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--gray-400);
+        }
+
+        strong {
+            color: var(--gray-200);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--cyan-400);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--cyan-500);
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: rgba(6, 182, 212, 0.05);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--cyan-500);
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.05);
+            border-left: 3px solid #fbbf24;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box p {
+            margin-bottom: 0;
+            color: var(--gray-300);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-brand {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .footer-company {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            margin-bottom: 4px;
+        }
+
+        .footer-duns {
+            font-size: 0.8rem;
+            color: var(--gray-600);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 16px;
+            }
+
+            .terms-content {
+                padding: 28px 20px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .contact-box {
+                padding: 20px 16px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-badge">Android Application</div>
+            <h1>Terms of Service</h1>
+            <p class="subtitle">Castle HD Mobile Application</p>
+            <p class="last-updated">Last Updated: <span id="update-date"></span></p>
+        </header>
+
+        <div class="terms-content">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                Welcome to Castle HD. These Terms of Service ("Terms") constitute a legally binding agreement between 
+                you ("User," "you," or "your") and <strong>RELIABLE MAINTENANCE SERVICES LLC</strong> ("Company," 
+                "we," "us," or "our") governing your use of the Castle HD mobile application ("App").
+            </p>
+            <p>
+                By downloading, installing, accessing, or using the App, you acknowledge that you have read, understood, 
+                and agree to be bound by these Terms. If you do not agree to these Terms, you must not download, install, 
+                or use the App, and you should uninstall it immediately if already installed.
+            </p>
+            <p>
+                Your continued use of the App following any updates or modifications to these Terms constitutes your 
+                acceptance of such changes.
+            </p>
+
+            <h2>2. About the App</h2>
+            <p>
+                Castle HD is a mobile application developed by RELIABLE MAINTENANCE SERVICES LLC, available for 
+                download on Android devices through Google Play. The App may provide features related to entertainment 
+                content discovery and may display advertisements to support its free operation.
+            </p>
+            <p>
+                To provide its functionality and services, the App integrates with the following third-party services:
+            </p>
+            <ul>
+                <li>
+                    <strong>Google Firebase:</strong> May be used for analytics, crash reporting, performance monitoring, 
+                    and/or push notifications, depending on app configuration.
+                </li>
+                <li>
+                    <strong>Google AdMob:</strong> Used to display advertisements within the App.
+                </li>
+                <li>
+                    <strong>Meta Audience Network:</strong> Used to display advertisements within the App.
+                </li>
+                <li>
+                    <strong>IMDb API:</strong> May be used to retrieve movie and television metadata for display purposes.
+                </li>
+            </ul>
+            <p>
+                These third-party services operate under their own terms and privacy policies, which you should review 
+                separately.
+            </p>
+
+            <h2>3. Eligibility and Age Requirements</h2>
+            <p>
+                The App is not directed to children under the age of 13. By using the App, you represent and warrant 
+                that you are at least 13 years of age.
+            </p>
+            <div class="warning-box">
+                <p>
+                    <strong>Important:</strong> If you are under 13 years of age, you must not download, install, or 
+                    use the App. If we become aware that a user is under 13, we will take appropriate steps to remove 
+                    any associated data and terminate access.
+                </p>
+            </div>
+            <p>
+                If you are between 13 and 18 years of age (or the age of majority in your jurisdiction), you should 
+                review these Terms with your parent or legal guardian to ensure they understand and agree to these Terms.
+            </p>
+
+            <h2>4. License and Permitted Use</h2>
+            <p>
+                Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, 
+                revocable license to download, install, and use the App on a compatible device that you own or control, 
+                solely for your personal, non-commercial purposes.
+            </p>
+            <h3>Restrictions</h3>
+            <p>You agree that you will not:</p>
+            <ul>
+                <li>
+                    Copy, modify, adapt, translate, or create derivative works based on the App or any portion thereof.
+                </li>
+                <li>
+                    Reverse engineer, disassemble, decompile, or otherwise attempt to derive the source code of the App, 
+                    except to the extent expressly permitted by applicable law.
+                </li>
+                <li>
+                    Distribute, sublicense, lease, rent, loan, or otherwise transfer the App to any third party.
+                </li>
+                <li>
+                    Remove, alter, or obscure any copyright, trademark, or other proprietary notices contained in the App.
+                </li>
+                <li>
+                    Use the App for any illegal, harmful, or unauthorized purpose.
+                </li>
+                <li>
+                    Attempt to circumvent, disable, or interfere with any security features or access controls of the App.
+                </li>
+                <li>
+                    Use automated scripts, bots, scrapers, or other automated means to access or collect data from the App.
+                </li>
+                <li>
+                    Interfere with or disrupt the integrity or performance of the App or its related systems.
+                </li>
+                <li>
+                    Use the App in any manner that could damage, disable, overburden, or impair our servers or networks.
+                </li>
+            </ul>
+
+            <h2>5. User Content</h2>
+            <p>
+                The App may allow you to save preferences, favorites, viewing history, or other user-generated settings 
+                or inputs ("User Content"). You are solely responsible for any User Content you create, store, or 
+                manage within the App.
+            </p>
+            <p>
+                You represent and warrant that any User Content you provide does not violate any applicable laws, 
+                infringe upon the rights of any third party, or breach these Terms.
+            </p>
+            <p>
+                User Content is typically stored locally on your device. We do not guarantee the preservation, backup, 
+                or recovery of User Content. You are responsible for maintaining your own backups if needed.
+            </p>
+
+            <h2>6. Advertisements and Third-Party Services</h2>
+            <p>
+                The App displays advertisements provided by third-party advertising networks, including Google AdMob 
+                and Meta Audience Network. These advertisements help support the free availability of the App.
+            </p>
+            <h3>How Advertising Works</h3>
+            <ul>
+                <li>
+                    Advertisements may be personalized based on your interests, device information, and other factors, 
+                    subject to your consent where required by law.
+                </li>
+                <li>
+                    Non-personalized advertisements may still be displayed based on contextual factors.
+                </li>
+                <li>
+                    Third-party advertising providers may collect certain information from your device in accordance 
+                    with their own privacy policies.
+                </li>
+            </ul>
+            <h3>Your Choices</h3>
+            <p>You may have options to manage advertising preferences:</p>
+            <ul>
+                <li>
+                    <strong>Device Settings:</strong> On Android, you can reset your Advertising ID or opt out of 
+                    ad personalization through Settings &gt; Google &gt; Ads.
+                </li>
+                <li>
+                    <strong>Consent Management:</strong> If you are located in the European Economic Area (EEA), 
+                    United Kingdom (UK), or other jurisdictions requiring consent, you may be presented with a 
+                    consent dialog to choose your advertising preferences.
+                </li>
+            </ul>
+            <div class="highlight-box">
+                <p>
+                    We encourage you to review the privacy policies of our advertising partners (Google and Meta) 
+                    to understand how they collect and use your information.
+                </p>
+            </div>
+
+            <h2>7. Intellectual Property</h2>
+            <p>
+                The App, including but not limited to its design, graphics, text, images, logos, icons, software, 
+                code, and all other content and materials (collectively, "App Materials"), is owned by or licensed 
+                to RELIABLE MAINTENANCE SERVICES LLC and is protected by copyright, trademark, and other intellectual 
+                property laws.
+            </p>
+            <p>
+                The "Castle HD" name, logo, and associated branding are trademarks of RELIABLE MAINTENANCE SERVICES LLC. 
+                You may not use our trademarks without our prior written consent.
+            </p>
+            <p>
+                Third-party trademarks, service marks, logos, and trade names appearing in the App are the property 
+                of their respective owners. Reference to any third-party products, services, or other information 
+                does not constitute or imply endorsement, sponsorship, or recommendation by us.
+            </p>
+            <p>
+                Content retrieved through the IMDb API is subject to IMDb's terms of use and intellectual property rights.
+            </p>
+
+            <h2>8. Disclaimer of Warranties</h2>
+            <p>
+                THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER 
+                EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, 
+                INCLUDING BUT NOT LIMITED TO:
+            </p>
+            <ul>
+                <li>
+                    IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+                </li>
+                <li>
+                    WARRANTIES THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER 
+                    HARMFUL COMPONENTS.
+                </li>
+                <li>
+                    WARRANTIES REGARDING THE ACCURACY, RELIABILITY, COMPLETENESS, OR TIMELINESS OF ANY CONTENT 
+                    DISPLAYED IN THE APP.
+                </li>
+            </ul>
+            <p>
+                We do not warrant that the App will meet your requirements or expectations. Your use of the App is 
+                at your sole risk.
+            </p>
+
+            <h2>9. Limitation of Liability</h2>
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL RELIABLE MAINTENANCE SERVICES LLC, 
+                ITS AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, OR LICENSORS BE LIABLE FOR ANY:
+            </p>
+            <ul>
+                <li>
+                    INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.
+                </li>
+                <li>
+                    LOSS OF PROFITS, REVENUE, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+                </li>
+                <li>
+                    DAMAGES ARISING FROM YOUR USE OF OR INABILITY TO USE THE APP.
+                </li>
+                <li>
+                    DAMAGES ARISING FROM ANY CONTENT OBTAINED FROM THE APP OR THIRD-PARTY SERVICES.
+                </li>
+                <li>
+                    DAMAGES ARISING FROM UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR DATA OR TRANSMISSIONS.
+                </li>
+            </ul>
+            <p>
+                THESE LIMITATIONS APPLY REGARDLESS OF THE LEGAL THEORY UPON WHICH DAMAGES MAY BE CLAIMED AND EVEN 
+                IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+            </p>
+            <p>
+                Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above 
+                limitations may not apply to you. In such cases, our liability will be limited to the fullest extent 
+                permitted by applicable law.
+            </p>
+
+            <h2>10. Indemnification</h2>
+            <p>
+                You agree to indemnify, defend, and hold harmless RELIABLE MAINTENANCE SERVICES LLC, its affiliates, 
+                directors, officers, employees, agents, and licensors from and against any and all claims, liabilities, 
+                damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:
+            </p>
+            <ul>
+                <li>Your use or misuse of the App.</li>
+                <li>Your violation of these Terms.</li>
+                <li>Your violation of any applicable laws or regulations.</li>
+                <li>Your violation of any rights of any third party.</li>
+                <li>Any User Content you create, store, or manage within the App.</li>
+            </ul>
+            <p>
+                We reserve the right, at our own expense, to assume the exclusive defense and control of any matter 
+                otherwise subject to indemnification by you, and you agree to cooperate with our defense of such claims.
+            </p>
+
+            <h2>11. Termination</h2>
+            <p>
+                These Terms are effective until terminated. Your rights under these Terms will terminate automatically 
+                without notice if you fail to comply with any provision of these Terms.
+            </p>
+            <p>
+                We reserve the right to, at any time and without prior notice:
+            </p>
+            <ul>
+                <li>Suspend or terminate your access to the App for any reason, including violation of these Terms.</li>
+                <li>Modify, suspend, or discontinue the App or any features thereof, temporarily or permanently.</li>
+            </ul>
+            <p>
+                You may terminate your use of the App at any time by uninstalling the App from your device.
+            </p>
+            <p>
+                Upon termination, all licenses and rights granted to you under these Terms will immediately cease. 
+                Sections of these Terms that by their nature should survive termination shall survive, including but 
+                not limited to Sections 7 (Intellectual Property), 8 (Disclaimer of Warranties), 9 (Limitation of 
+                Liability), 10 (Indemnification), and 13 (Governing Law).
+            </p>
+
+            <h2>12. Changes to the App and Terms</h2>
+            <h3>Changes to the App</h3>
+            <p>
+                We reserve the right to modify, update, suspend, or discontinue any aspect of the App at any time, 
+                with or without notice. This includes adding or removing features, changing functionality, and 
+                updating content. We are not liable to you or any third party for any modification, suspension, 
+                or discontinuation of the App.
+            </p>
+            <h3>Changes to These Terms</h3>
+            <p>
+                We may revise and update these Terms from time to time at our sole discretion. When we make changes, 
+                we will update the "Last Updated" date at the top of this page.
+            </p>
+            <p>
+                Your continued use of the App after any changes to these Terms constitutes your acceptance of the 
+                revised Terms. We encourage you to review these Terms periodically to stay informed of any updates.
+            </p>
+            <p>
+                For significant changes, we may provide additional notice through the App or other appropriate means.
+            </p>
+
+            <h2>13. Governing Law</h2>
+            <p>
+                These Terms and any dispute arising out of or related to these Terms or the App shall be governed by 
+                and construed in accordance with the laws of the United States and the Commonwealth of Virginia, 
+                without regard to conflict-of-law principles.
+            </p>
+            <p>
+                Any legal action or proceeding relating to these Terms or the App shall be brought exclusively in 
+                the state or federal courts located in Virginia, and you consent to the personal jurisdiction and 
+                venue of such courts.
+            </p>
+            <p>
+                If any provision of these Terms is held to be invalid or unenforceable, such provision shall be 
+                modified to the minimum extent necessary to make it valid and enforceable, and the remaining provisions 
+                shall continue in full force and effect.
+            </p>
+
+            <h2>14. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or feedback regarding these Terms of Service or the App, 
+                please contact us:
+            </p>
+
+            <div class="contact-box">
+                <p><strong>Developer:</strong> Castle HD</p>
+                <p><strong>Company:</strong> RELIABLE MAINTENANCE SERVICES LLC</p>
+                <p><strong>Address:</strong> 4012 Cairo Pl, Woodbridge, VA 22192-7616, United States</p>
+                <p><strong>Phone:</strong> <a href="tel:+16199539565">+1 (619) 953 9565</a></p>
+                <p><strong>Email:</strong> <a href="mailto:dev@reliablemaintenance.online">dev@reliablemaintenance.online</a></p>
+                <p><strong>D-U-N-S Number:</strong> 883534922</p>
+            </div>
+
+            <p style="margin-top: 24px;">
+                We appreciate your use of Castle HD and are committed to providing you with a quality experience.
+            </p>
+        </div>
+
+        <footer>
+            <p class="footer-brand">Castle HD</p>
+            <p class="footer-company">RELIABLE MAINTENANCE SERVICES LLC</p>
+            <p class="footer-duns">D-U-N-S: 883534922</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set the last updated date to today's date
+        const today = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        document.getElementById('update-date').textContent = today;
+    </script>
+</body>
+</html>
